@@ -94,8 +94,15 @@
 
 ## 🧑🏻‍💻 프로젝트 구조도
 
-<img width="1009" alt="스크린샷 2024-04-12 오후 4 23 36" src="https://github.com/nwejin/TeamProject-3-Front/assets/147528674/5800db83-cec9-46b8-9b7c-ad55b2764f22">
+<img width="1009" alt="스크린샷 2024-04-12 오후 4 23 36" src="https://github.com/nwejin/TeamProject-3-Front/assets/147528674/58768b43-d1b4-4a24-a5d8-8d1cca70082b">
 
+<br />
+
+## 🧑🏻‍💻 AI 기능 구조도
+
+<img width="1009" alt="스크린샷 2024-04-12 오후 4 23 36" src="https://github.com/nwejin/TeamProject-3-Front/assets/147528674/e9f20072-8eb1-4d83-b9dd-1afdbc38c788">
+<img width="1009" alt="스크린샷 2024-04-12 오후 4 23 36" src="https://github.com/nwejin/TeamProject-3-Front/assets/147528674/27bf70a6-080b-4fb7-a7fe-9ef4a619ce44">
+<img width="1009" alt="스크린샷 2024-04-12 오후 4 23 36" src="https://github.com/nwejin/TeamProject-3-Front/assets/147528674/919e0245-e22a-4f46-bd3c-fb2270d4acbe">
 
 <br />
 
