@@ -1,0 +1,55 @@
+.all {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  height: calc(100vh - 50px);
+  z-index: 1;
+}
+.last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+
+  width: 50%;
+}
+.but {
+  border-radius: 20px;
+  border: 1px solid #ff4b2b;
+  background-color: #ff4b2b;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+}
+.add {
+  background-color: transparent;
+  border: none;
+  color: #eee;
+}
+/* Add these styles to your codi.module.scss file */
+
+.modalButton {
+  background-color: #ff5656;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.modalButton:hover {
+  background-color: #ff4444;
+}

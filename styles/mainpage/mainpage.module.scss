@@ -1,0 +1,392 @@
+@import '../common.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/* 기본 스타일 */
+.weatherContainer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem; /* 상단 여백 추가 */
+  margin-bottom: 2rem; /* 하단 여백 추가 */
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  // background-color: pink;
+  justify-content: center;
+  align-items: center;
+}
+
+.weatherIcon img {
+  width: 18vh;
+  height: 18vh;
+  margin-top: 1.55vh;
+}
+
+.locationText {
+  font-size: 2.56vh;
+  margin-top: 0;
+  font-family: '', sans-serif;
+}
+
+.temperatureText {
+  font-size: 2.18vh;
+  margin: 0.5vh 0;
+  text-align: center;
+  padding: 0.8vh 1.2vh;
+  background-color: #f8f8f8;
+  border-radius: 0.5vh;
+  box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.temperatureTextmain {
+  font-size: 6.15vh;
+  margin-bottom: 3.25vh;
+  margin-top: 3.25vh;
+}
+
+.temperatureTextcolor {
+  font-size: 2.28vh;
+  margin-bottom: 3.25vh;
+}
+
+.Ai,
+.Tshirt,
+.Pants,
+.Outer,
+.Report {
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: contain;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+
+.Ai {
+  background-image: url('../../public/Ai.JPG');
+}
+
+.Tshirt {
+  background-image: url('../../public/Tshirt.JPG');
+}
+
+.Pants {
+  background-image: url('../../public/Pants.JPG');
+}
+
+.Outer {
+  background-image: url('../../public/Outer.JPG');
+}
+
+.Report {
+  background-image: url('../../public/codi.JPG');
+}
+
+.test {
+  width: 100%;
+}
+
+.mainpage__TopButton button,
+.mainpage__BottomButton button {
+  margin: 0.5rem;
+}
+
+.mainpage__TopButton,
+.mainpage__BottomButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 300px) and (min-height: 300px) {
+  .weatherContainer .temperatureText {
+    font-size: 1.42vh;
+    margin-bottom: 0.56vh;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 87%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-height: 1150px) {
+  .weatherContainer .temperatureText {
+    font-size: 1.2vh;
+  }
+}
+
+.weatherbox {
+  font-size: 1.42vh;
+  margin-top: 1.5rem; /* 여백 추가 */
+  margin-bottom: 4vh;
+  text-align: center;
+  // background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTA3MTdfMTU4%2FMDAxNTYzMzYxMDUwNTk4.8AiQfnFYb3hcJGF3bKZ4AWlfYLjPnGufu7ABMDNSkIkg.aly3JH9HOGZOJMnHqBAZIbIxdYlfFKRlY5nQS12olkcg.JPEG.yunyejin12%2F20190704_083459.jpg&type=ofullfill340_600_png');
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+}
+
+.hi {
+  height: 16px;
+}
+
+.borderline {
+  font-size: 1.42vh;
+  margin-top: 1.5rem; /* 여백 추가 */
+  margin-bottom: 4vh;
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.Sport_Jacket {
+  background-image: url('../../public/Sport_Jacket.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Shirt {
+  background-image: url('../../public/Shirt.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Sport_Jacket {
+  background-image: url('../../public/Sport_Jacket.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Shirt {
+  background-image: url('../../public/Shirt.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Short_T_shirt {
+  background-image: url('../../public/Short_T_shirt.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Sport_pants {
+  background-image: url('../../public/Sport_pants.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Long_T_shirt {
+  background-image: url('../../public/Long_T_shirt.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+
+.Hoodies {
+  background-image: url('../../public/Hoodies.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Sweat_shirt {
+  background-image: url('../../public/Sweat_shirt.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Sweater {
+  background-image: url('../../public/Sweater.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Denim {
+  background-image: url('../../public/Denim.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Slacks {
+  background-image: url('../../public/Slacks.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Short_pants {
+  background-image: url('../../public/Short_pants.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Jacket {
+  background-image: url('../../public/Jacket.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Coat {
+  background-image: url('../../public/Coat.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Padded_jacket {
+  background-image: url('../../public/Padded_jacket.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Blazer {
+  background-image: url('../../public/Blazer.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Mustang {
+  background-image: url('../../public/Mustang.JPG');
+  width: 12vh;
+  height: 12vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  margin: 0.5rem; // 버튼 간의 간격 조정
+}
+.Blazer,
+.Coat,
+.Denim,
+.Hoodies,
+.Jacket,
+.Long_T_shirt,
+.Mustang,
+.Padded_jacket,
+.Shirt,
+.Short_pants,
+.Short_T_shirt,
+.Slacks,
+.Sport_Jacket,
+.Sport_pants,
+.Sweat_shirt,
+.Sweater {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 1.28vw;
+  border: none;
+  box-shadow: 0px 0.64vw 1.28vw rgba(0, 0, 0, 0.1);
+  background-size: 100% 100%; /* 이미지가 컨테이너에 가득 차도록 설정 */
+  background-position: center;
+  margin: 0.5rem; /* 버튼 간의 간격 조정 */
+}

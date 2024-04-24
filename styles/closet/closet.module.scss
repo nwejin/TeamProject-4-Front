@@ -1,0 +1,339 @@
+@import '../common.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  // background-color: pink;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.innerHeader {
+  display: flex;
+  // background-color: pink;
+  width: 90%;
+  flex-direction: row;
+  height: 5%;
+  min-height: 5%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: $gray;
+    span {
+      color: $black;
+      font-size: 1.2rem;
+      font-weight: 900;
+      margin-right: 0.3rem;
+    }
+  }
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    button {
+      border: none;
+      background: none;
+      @include flex();
+      span {
+        color: $lightgray;
+      }
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.addToggleBtn {
+  background-color: $black;
+  width: 50vw;
+  height: 5vh;
+  position: fixed;
+  top: 90%;
+  left: 25%;
+  bottom: 5%;
+  display: flex;
+  z-index: 90;
+  justify-content: center;
+  align-items: center;
+  border-radius: $radius-m;
+  button {
+    background: none;
+    border: none;
+    color: $white;
+    span {
+      color: $white;
+      font-weight: 700;
+    }
+  }
+}
+
+.addToggle {
+  position: absolute;
+  bottom: 80%;
+  width: 100%;
+  background-color: $black;
+  height: 13vh;
+  min-height: 13vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: $radius-m $radius-m 0 0;
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+.selectBox {
+  width: 90%;
+  height: 100px;
+  min-height: 100px;
+  background-color: $white;
+  margin-top: 1rem;
+  border-radius: $radius-m;
+  box-shadow: $shadow;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .bigCatChecked {
+    color: $theme-red-5 !important;
+    font-weight: 900 !important;
+    font-size: 1rem;
+  }
+  .smallCatChecked {
+    color: $gray !important;
+    font-weight: 900 !important;
+    font-size: 0.9rem;
+  }
+  .bigCat {
+    font-size: 1rem;
+  }
+  .smallCat {
+    color: $lightgray;
+    font-size: 0.9rem;
+  }
+  .selectUl {
+    width: 100%;
+    height: 40%;
+    margin: 0;
+    padding: 0;
+    @include flex();
+    justify-content: flex-start;
+    li > input {
+      background: none;
+      border: none;
+    }
+  }
+}
+
+.sortBox {
+  width: 90%;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  button {
+    background: none;
+    border: none;
+    span {
+      color: $lightgray;
+    }
+  }
+  .smallBtn {
+    span {
+      color: $theme-red-5;
+    }
+  }
+  .bigBtn {
+    span {
+      color: $theme-red-5;
+    }
+  }
+}
+
+.mainInfoBoxDefault {
+  width: 90%;
+  max-width: 90%;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1vh;
+  row-gap: 1vh;
+  justify-content: center;
+  .infoSmallBox {
+    box-sizing: border-box;
+    background-color: $white;
+    box-shadow: $shadow;
+    border-radius: $radius-m;
+    width: 42vw;
+    height: 180px;
+    min-height: 180px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    div {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      button {
+        background: none;
+        border: none;
+        display: flex;
+        align-items: center;
+      }
+      .title {
+        height: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: left;
+        text-overflow: ellipsis;
+        display: block;
+        span {
+          color: $black;
+          font-size: 1rem;
+        }
+      }
+      span {
+        font-size: 0.9rem;
+        color: $lightgray;
+      }
+    }
+    a {
+      width: 70%;
+      height: 70%;
+      // @include flex();
+      display: block;
+      overflow: hidden;
+      position: relative;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .a {
+      display: flex;
+      // width: 100%;
+      height: 70%;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+        height: 70%;
+      }
+    }
+  }
+  .noResultBox {
+    background: none;
+    position: absolute;
+    width: 90%;
+    @include flex();
+    flex-direction: column;
+    top: 30vh;
+    span {
+      color: $gray;
+    }
+  }
+}
+
+.mainInfoBoxSmall {
+  width: 90%;
+  // height: 100%;
+  // height: fit-content;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  // background-color: pink;
+  .infoSmallBox {
+    box-shadow: $shadow;
+    border-radius: $radius-m;
+    display: flex;
+    background-color: white;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    height: 6vh;
+    min-height: 6vh;
+    margin-bottom: 0.5rem;
+    div {
+      width: 60%;
+      height: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        width: 50%;
+      }
+      button {
+        background: none;
+        border: none;
+        span {
+          font-size: 1rem;
+          color: $lightgray;
+        }
+      }
+      .title {
+        color: $black;
+        white-space: nowrap;
+        overflow: hidden;
+        text-align: left;
+        text-overflow: ellipsis;
+      }
+    }
+    a {
+      width: 35px;
+      height: 35px;
+      position: relative;
+      display: block;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  .noResultBox {
+    background: none;
+    position: absolute;
+    width: 90%;
+    @include flex();
+    flex-direction: column;
+    top: 30vh;
+    span {
+      color: $gray;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+@import '../common.scss';
+
+.container {
+  width: $width;
+  max-width: $max-width;
+  height: calc(100vh - 50px - 2em);
+
+  .components_Div {
+    @include flex();
+
+    .components {
+      @include flex();
+      border-bottom: 1px solid $lightgray;
+      width: 25%;
+      height: 2em;
+      color: $lightgray;
+      cursor: pointer;
+
+      &.changedComponent {
+        border-bottom: 3px solid black;
+        color: $black;
+        background-color: $theme-red-2;
+      }
+    }
+  }
+}
+.changedComponent2 {
+  border-bottom: 3px solid black !important;
+  color: $black !important;
+  background-color: $theme-red-2;
+}

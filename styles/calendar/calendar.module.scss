@@ -1,0 +1,192 @@
+/* common.scss */
+@import '../common.scss';
+
+/* calendar.module.scss */
+.h1 {
+  @include flex();
+  // margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.Datetext {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  flex-direction: column;
+  align-items: center; /* 수직 가운데 정렬 */
+}
+.today,
+.selectedDate {
+  background-color: $theme-red-4;
+  color: $theme-red-1;
+}
+.calendar-container {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+}
+.calendar-container .check {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 세로 방향으로 상단과 하단 사이에 공간을 동일하게 분배 */
+  align-items: center; /* 가운데 정렬 */
+}
+.calendar-container .upload {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 세로 방향으로 상단과 하단 사이에 공간을 동일하게 분배 */
+  align-items: center; /* 가운데 정렬 */
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.calendar-buttons {
+  display: flex;
+}
+
+.calendar-buttons button {
+  background-color: #ff5656;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-buttons button:hover {
+  background-color: #ff5656;
+}
+
+.calendar-body table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-body th,
+.calendar-body td {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.calendar-body .empty-cell {
+  visibility: hidden;
+}
+.calendar-buttons button {
+  background-color: #ff5656;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.calendar-buttons button:hover {
+  background-color: #ff5656;
+}
+
+/* 코디 확인하기 버튼 스타일 */
+.selected-date-box {
+  margin-top: 20px;
+  flex-direction: column;
+  align-items: center; /* 가운데 정렬 */
+}
+
+.selected-date-box button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.selected-date-box button:hover {
+  background-color: #0b7dda;
+}
+
+/* 코디 등록하기 버튼 스타일 */
+.selected-date-box a button {
+  background-color: $modal-no;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.selected-date-box a button:hover {
+  background-color: #ff5656;
+}
+.all {
+  justify-content: center;
+  @include scrollbar();
+  width: 100%;
+  height: calc(100vh - 50px);
+  z-index: 1;
+}
+.all2 {
+  justify-content: center;
+  @include scrollbar();
+
+  margin-top: 30px;
+  width: 80%;
+  height: auto;
+  height: calc(100vh - 50px);
+  z-index: 1;
+}
+
+.check {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 중앙 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
+  width: 80%;
+}
+.upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 세로 중앙 정렬 */
+  align-items: center; /* 가로 중앙 정렬 */
+  width: 80%;
+}
+.ditto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.mainContainer > .ggg {
+  @include flex();
+}
+.mainContainer {
+  width: $width;
+  max-width: $max-width;
+  width: 92%;
+  @include scrollbar();
+}

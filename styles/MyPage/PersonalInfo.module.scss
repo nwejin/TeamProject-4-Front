@@ -1,0 +1,43 @@
+@import '../common.scss';
+
+.gridContainer {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+  @include scrollbar();
+}
+
+.card {
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.content {
+  padding-top: 1.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.value {
+  color: #333333;
+}
+
+.imgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 2em;
+}
+
+.image {
+  max-height: 100%;
+}

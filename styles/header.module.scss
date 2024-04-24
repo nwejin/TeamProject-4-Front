@@ -1,0 +1,200 @@
+@import './common.scss';
+
+.container {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  background-color: $bg-gray;
+  z-index: 99;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  ul {
+    list-style: none;
+    display: flex;
+    width: 90%;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: 55px;
+      height: 100%;
+      // border-radius: 50%;
+    }
+    button {
+      background: none;
+      border: none;
+    }
+  }
+}
+
+.sideBarContainer {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(51, 51, 51, 0.8);
+  // background-color: none;
+  display: flex;
+  flex-direction: row;
+  z-index: 3000;
+  transition: opacity 0.4s ease;
+  .closeBtn {
+    transition: opacity 0.4s ease;
+    background: none;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    z-index: 2000;
+    left: 65%;
+    span {
+      color: white;
+    }
+  }
+}
+
+.sideBarInnerBox {
+  width: 65%;
+  height: 100vh;
+  background-color: white;
+  @include flex();
+  flex-direction: column;
+  position: absolute;
+  left: -100%;
+  transition: left 0.4s ease;
+  .sideBarContentBox {
+    border-radius: $radius-s;
+    background-color: $bg-gray;
+    width: 93%;
+    height: 98%;
+    @include flex();
+    flex-direction: column;
+    ul {
+      margin: 0;
+    }
+    .userBox {
+      height: 10%;
+      width: 80%;
+      display: flex;
+      // background-color: pink;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      a {
+        color: #333;
+      }
+      .loginBtn {
+        background-color: $black;
+        height: 50%;
+        width: 40%;
+        border-radius: $radius-m;
+        @include flex();
+        a {
+          color: white;
+        }
+      }
+      .registerBtn {
+        background-color: $theme-red-5;
+        height: 50%;
+        width: 40%;
+        border-radius: $radius-m;
+        @include flex();
+        a {
+          color: white;
+        }
+      }
+    }
+    .navBox {
+      @include flex();
+      flex-direction: column;
+      height: 60%;
+      width: 100%;
+      border-top: 1.5px solid #cecece;
+      border-bottom: 1.5px solid #cecece;
+      // background-color: $bg-gray;
+      margin: 2rem 0;
+      li {
+        width: 100%;
+        // margin-top: 1rem;
+        height: 8%;
+        @include flex();
+        align-items: center;
+        position: relative;
+        a {
+          // background-color: red;
+          margin-left: 2rem;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          color: $black;
+          p {
+            margin: 0;
+            margin-left: 0.5rem;
+          }
+        }
+        a:hover {
+          color: $theme-red-5;
+        }
+        .path {
+          position: absolute;
+          left: 0;
+          background-color: $theme-red-5;
+          height: 100%;
+          color: $theme-red-5;
+          width: 6%;
+          border-radius: 0 $radius-s $radius-s 0;
+        }
+      }
+      .cat {
+        margin-top: 1rem;
+        justify-content: flex-start;
+        span {
+          margin-left: 2rem;
+          color: $theme-red-5;
+        }
+      }
+    }
+    .myPageBox {
+      // background-color: pink;
+      width: 100%;
+      height: 100%;
+      li {
+        width: 100%;
+        a {
+          width: 100%;
+          @include flex();
+          justify-content: space-around;
+          flex-direction: row;
+          div {
+            width: 15vw;
+            height: 15vw;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+              width: 100%;
+              height: 100%;
+              overflow: hidden;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+    .logoutBox {
+      width: 100%;
+      height: 10%;
+      @include flex();
+      li {
+        width: 40%;
+        a {
+          @include flex();
+          width: 100%;
+          justify-content: space-evenly;
+          span {
+            color: $theme-red-5;
+          }
+        }
+      }
+    }
+  }
+}

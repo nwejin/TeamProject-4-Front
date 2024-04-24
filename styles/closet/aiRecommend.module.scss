@@ -1,0 +1,94 @@
+@import '../common.scss';
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+  .refreshBtn {
+    border: none;
+    margin: 1rem 0;
+    width: 50vw;
+    height: 5vh;
+    font-weight: 900;
+    border-radius: $radius-m;
+    color: white;
+    background: $theme-red-5;
+  }
+  .refreshBtnDisabled {
+    background: $black;
+    opacity: 0.1;
+  }
+
+  .mainContainer {
+    position: relative;
+    width: 70%;
+    height: 80vh;
+    @include flex();
+    flex-direction: column;
+    .descText {
+      position: absolute;
+      top: 1vh;
+      color: $gray;
+    }
+    img {
+      height: 60vh;
+    }
+    div {
+      position: absolute;
+      background-color: white;
+      width: 30vw;
+      height: 10vh;
+      border-radius: $radius-m;
+      border: 1px solid $lightgray;
+      @include flex();
+      a {
+        width: 100%;
+        height: 100%;
+        // @include flex();
+        display: block;
+        overflow: hidden;
+        position: relative;
+        img {
+          // width: 30%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      span {
+        position: absolute;
+        font-size: 2rem;
+        color: $theme-red-5;
+      }
+    }
+    .outerBox {
+      height: 20vh;
+      top: 25%;
+      left: 3vw;
+    }
+    .topBox {
+      top: 30%;
+      left: 37vw;
+    }
+    .pantsBox {
+      top: 60%;
+    }
+    .shoesBox {
+      top: 80%;
+    }
+    .accessoryBox {
+      top: 15%;
+      width: 15vw;
+      height: 5vh;
+    }
+  }
+}

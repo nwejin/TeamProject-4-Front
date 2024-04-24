@@ -1,0 +1,52 @@
+@import '../common.scss';
+
+$container-img-Div-height: 16em;
+
+.container {
+  .img_Div {
+    height: $container-img-Div-height;
+
+    @include flex();
+
+    > img {
+      width: 12em;
+    }
+  }
+}
+@media (min-width: 420px) {
+  .container .img_Div {
+    $container-img-Div-height: 20em; /* 420px 이상일 때의 높이 */
+  }
+}
+
+@media (min-width: 600px) {
+  .container .img_Div {
+    $container-img-Div-height: 25em; /* 600px 이상일 때의 높이 */
+  }
+}
+
+@media (min-width: 768px) {
+  .container .img_Div {
+    $container-img-Div-height: 30em; /* 768px 이상일 때의 높이 */
+  }
+}
+/* 420px 이상의 너비에서 600px 미만일 때의 높이 */
+@media (min-width: 420px) and (max-width: 599px) {
+  .container .img_Div {
+    $container-img-Div-height: calc(20em + 2em); /* 20em + 2em */
+  }
+}
+
+/* 600px 이상의 너비에서 768px 미만일 때의 높이 */
+@media (min-width: 600px) and (max-width: 767px) {
+  .container .img_Div {
+    $container-img-Div-height: calc(24em + 2em); /* 24em + 2em */
+  }
+}
+
+/* 768px 이상의 너비에서 992px 미만일 때의 높이 */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container .img_Div {
+    $container-img-Div-height: calc(28em + 2em); /* 28em + 2em */
+  }
+}

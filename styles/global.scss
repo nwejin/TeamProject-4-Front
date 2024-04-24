@@ -1,0 +1,30 @@
+@import './common.scss';
+
+body {
+  color: $black;
+  margin: 0;
+  padding: 0;
+  background-color: $bg-gray;
+}
+
+* {
+  font-family: 'Pretendard-Regular';
+  color: $black;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  height: calc(100vh - 50px);
+  z-index: 1;
+}

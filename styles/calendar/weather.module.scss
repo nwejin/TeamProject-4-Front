@@ -1,0 +1,41 @@
+@import '../common.scss';
+
+.hi {
+  width: 10vw;
+}
+
+.weatherContainer {
+  width: 100%;
+  font-size: 18px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+
+.weatherInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.weatherItem {
+  text-align: center;
+}
+
+.weatherIcon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.weatherContainer {
+  @include flex();
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  margin-bottom: 30px;
+}

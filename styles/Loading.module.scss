@@ -1,0 +1,9 @@
+@import './common.scss';
+
+.container {
+  @include flex();
+  flex-direction: column;
+  h3 {
+    margin-bottom: 3em;
+  }
+}

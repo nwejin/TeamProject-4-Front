@@ -1,0 +1,25 @@
+@import '../common.scss';
+@import './OuterSizeNum.module.scss';
+
+.container {
+  @extend .container;
+
+  .dimension {
+    @extend .dimension;
+
+    .input_Div {
+      @extend .input_Div;
+      margin-left: auto;
+      width: 40%;
+
+      .input {
+        height: 3vh;
+        width: calc(100% - 0.5em);
+      }
+    }
+
+    .unit {
+      @extend .unit;
+    }
+  }
+}

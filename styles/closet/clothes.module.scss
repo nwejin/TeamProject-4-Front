@@ -1,0 +1,194 @@
+@import '../common.scss';
+
+.pNameContainer {
+  @include flex();
+  background-color: white;
+  width: 90%;
+  height: 6vh;
+  min-height: 6vh;
+  margin-top: 3vh;
+  border-radius: $radius-m;
+  box-shadow: $shadow;
+  input {
+    width: 90%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    border: none;
+  }
+}
+
+.editcheck {
+  color: $theme-red-5;
+}
+
+.imgContainer {
+  margin-top: 3vh;
+  background: none;
+  width: 90%;
+  height: 300px;
+  min-height: 300px;
+  border-radius: $radius-m;
+  position: relative;
+  overflow: hidden;
+  @include flex();
+  // background-color: pink;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    border-radius: $radius-m;
+  }
+  .likedBtn {
+    position: absolute;
+    @include flex();
+    top: 90%;
+    left: 90%;
+    background: none;
+    border: none;
+    span {
+      color: $lightgray;
+    }
+  }
+}
+
+.infoContainer {
+  margin-top: 3vh;
+  width: 90%;
+  height: 35vh;
+  min-height: 35vh;
+  background-color: white;
+  @include flex();
+  flex-direction: column;
+  border-radius: $radius-m;
+  box-shadow: $shadow;
+  div {
+    width: 90%;
+    height: 10%;
+    @include flex();
+    justify-content: flex-start;
+    margin: 1% 0;
+    .title {
+      width: 30%;
+      margin-right: 1vh;
+      color: $gray;
+      font-size: 0.9rem;
+    }
+    .desc {
+      font-weight: 500;
+      width: 70%;
+    }
+    .descPrice {
+      font-weight: 500;
+      width: 70%;
+      border: 0.5px solid $lightgray;
+      border-radius: $radius-s;
+      padding: 0.5rem;
+    }
+  }
+  .sizeBox {
+    position: relative;
+    width: 70%;
+    .sizeBtn {
+      background: white;
+      width: 100%;
+      border: 0.5px solid $lightgray;
+      border-radius: $radius-s;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0.2rem 0.2rem;
+    }
+    .sizeSelectBox {
+      background-color: white;
+      border: 0.5px solid $lightgray;
+      border-radius: $radius-s;
+      position: absolute;
+      width: 100%;
+      z-index: 99;
+      ul {
+        padding: 0;
+        margin: 0;
+        li {
+          input {
+            width: 100%;
+            border: none;
+            background: none;
+          }
+        }
+      }
+    }
+  }
+  .weatherBox {
+    // background-color: pink;
+    width: 70%;
+    height: 100%;
+    justify-content: space-between;
+    input {
+      width: 20%;
+      border: 0.5px solid $lightgray;
+      border-radius: $radius-s;
+      background: none;
+      color: $gray;
+    }
+    .weatherClicked {
+      background: $black;
+      color: white;
+    }
+  }
+  .thicknessBox {
+    width: 70%;
+    height: 100%;
+    justify-content: space-between;
+    input {
+      width: 30%;
+      border: 0.5px solid $lightgray;
+      border-radius: $radius-s;
+      background: none;
+      color: $gray;
+    }
+    .thickClicked {
+      background: $black;
+      color: white;
+    }
+  }
+  .priceInput {
+    // background-color: pink;
+    padding: 0.4rem 0.2rem;
+    box-sizing: border-box;
+    border: 0.5px solid $lightgray;
+    border-radius: $radius-s;
+    width: 70%;
+  }
+}
+
+.btnContainer {
+  @include flex();
+  justify-content: space-between;
+  margin-top: 3vh;
+  width: 70vw;
+  min-width: 70vw;
+  height: 3vh;
+  min-height: 3vh;
+  button {
+    border: none;
+    background: none;
+    border-radius: $radius-m;
+    padding: 0.5rem 1rem;
+    width: 30vw;
+    min-width: 30vw;
+  }
+  .modifyBtn {
+    background-color: $black;
+    color: $white;
+  }
+  .deleteBtn {
+    background-color: $theme-red-5;
+    color: $white;
+  }
+}

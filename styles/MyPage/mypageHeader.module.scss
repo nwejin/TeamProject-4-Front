@@ -1,0 +1,34 @@
+@import '../common.scss';
+.mypage_Header {
+  width: 100%;
+  height: 16em;
+  @include flex();
+  flex-direction: column;
+
+  .mypage_Profile_edit {
+    margin-left: auto;
+    margin-right: 1.5em;
+  }
+
+  .mypage_Profile_image {
+    position: relative;
+    width: 9em;
+    height: 9em;
+    border-radius: 50%;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .mypage_Profile_nickname {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+  }
+}
+.margin {
+  margin-top: 0.75em;
+}

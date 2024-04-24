@@ -1,0 +1,11 @@
+@import '../common.scss';
+
+.mypageEdit_Container {
+  width: $width;
+  max-width: $max-width;
+  @include scrollbar();
+
+  .mypageEdit_underbar {
+    border-bottom: 1px solid lightgrey;
+  }
+}

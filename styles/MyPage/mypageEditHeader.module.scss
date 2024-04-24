@@ -1,0 +1,101 @@
+@import '../common.scss';
+.mypageEdit_Header {
+  width: 100%;
+  height: 16em;
+  @include flex();
+  flex-direction: column;
+
+  .uploadButtonContainer {
+    margin-left: auto;
+    width: 40px;
+    height: 24px;
+    margin-right: 10px;
+    .uploadButton {
+      background: $bg-gray;
+      border: none;
+    }
+  }
+
+  .mypageEdit_Profile_edit {
+    margin-left: auto;
+    margin-right: 0.75em;
+  }
+  .edit_image {
+    position: relative;
+    @include flex();
+    .mypage_Profile_image {
+      position: relative;
+      width: 9em;
+      height: 9em;
+      border-radius: 50%;
+      overflow: hidden;
+
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .camera {
+      position: absolute;
+      transform: translate(3.3em, 3.3em);
+      width: 2em;
+      height: 2em;
+      border: 1px solid $gray;
+      border-radius: 10px;
+      background-color: white;
+      @include flex();
+      > img {
+        width: 70%;
+        height: 70%;
+      }
+    }
+  }
+
+  .label {
+    .label_Div {
+      margin-top: 5px;
+      font-weight: bold;
+      width: 100px;
+      height: 30px;
+      background: #fff;
+      border: 1px solid rgb(77, 77, 77);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    cursor: pointer;
+  }
+  .input {
+    width: 74px;
+    height: 40px;
+    display: none;
+  }
+
+  .nick_Div {
+    margin-top: 1.25em;
+    @include flex();
+    height: 24px;
+    transform: translateX(16px);
+
+    .mypage_Profile_nickname {
+      height: 24px;
+      font-size: 1em;
+    }
+    .nick_Icon {
+      @include flex();
+      margin-left: 12px;
+    }
+  }
+}
+
+.centerText {
+  text-align: center;
+  border: none;
+  background-color: $bg-gray;
+}
+.centerText2 {
+  text-align: center;
+}

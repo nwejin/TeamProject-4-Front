@@ -1,0 +1,64 @@
+// 색
+$black: #333333;
+$bg-gray: #f6f6f6;
+$white: #ffffff;
+$lightgray: #d3d3d3;
+$gray: #666666;
+
+// 버튼 테두리
+$radius-s: 0.3rem;
+$radius-m: 0.5rem;
+// 공용 가로
+$width: 100%;
+$max-width: 40em;
+// 박스 그림자
+$shadow: 0px 2px 5px -1px $lightgray;
+
+// 테마 색
+$theme-red-5: #ff5656;
+$theme-red-4: #ff7f7f;
+$theme-red-3: #ffafaf;
+$theme-red-2: #ffdada;
+$theme-red-1: #ffecec;
+$another-color: #007f80;
+// 모달 색
+// $modal-yes: #5666f3;
+$modal-yes: #333333;
+$modal-no: #ff5656;
+
+//폰트
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
+    format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+//-----------------------------------------------------------
+// 함수
+// flex (가로 세로 중앙 정렬)
+@mixin flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// 큰 버튼
+@mixin big_btn() {
+  background-color: #ff5656;
+  border: none;
+  color: #ffffff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+// 스크롤바 안보이게
+@mixin scrollbar() {
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
