@@ -110,30 +110,8 @@ open AI를 활용하여 내 옷장 속 옷 데이터와 현재 날씨 정보에 
 ## 🧑🏻‍💻 페이지별 상세 설명
 
 ### 메인 페이지
-<img src="https://github.com/nwejin/TeamProject-3-Front/assets/147528674/c971da3f-8b96-42a8-88d9-52154bfa8da1">
+### 옷장 페이지
 
-### 뉴스룸
-<img src="https://github.com/nwejin/TeamProject-3-Front/assets/147528674/81dad29a-66e0-49b3-9a1a-a80ed0921ec8"/>
-
-### 주식길잡이 (주식)
-<img src="https://github.com/nwejin/TeamProject-3-Front/assets/147528674/17b66b63-4f05-44f4-90cc-f6cb80e850a4"/>
-
-### 주식길잡이 (기업정보)
-<img src="https://github.com/nwejin/TeamProject-3-Front/assets/147528674/0d77cb33-64ff-45f3-9578-cee945f0c2f2"/>
-
-### 주식길잡이 (모의투자)
-<img src="https://github.com/nwejin/TeamProject-3-Front/assets/147528674/09b338c2-0fb9-40cd-8d3a-23d4a8aa9c14"/>
-
-<img src="https://github.com/nwejin/TeamProject-3-Front/assets/147528674/06446f10-d367-44f7-9f4c-4c191d10235a"/>
-
-### 개미의 시선 (커뮤니티)
-<img src="https://github.com/nwejin/TeamProject-3-Front/assets/147528674/ceba6200-d244-45de-8978-6bde61d1af2b"/>
-
-### 마이페이지
-<img src="https://github.com/nwejin/TeamProject-3-Front/assets/147528674/b93804d9-d0f9-4b33-be0b-49b86933fa08"/>
-
-### 관리자 페이지
-<img src="https://github.com/nwejin/TeamProject-3-Front/assets/147528674/85d67873-36d2-4437-a0e9-39d79fd53748"/>
 
 <br />
 
@@ -141,11 +119,12 @@ open AI를 활용하여 내 옷장 속 옷 데이터와 현재 날씨 정보에 
 
 | 이름 | 역할 | 개발 내용 |
 |------|---|---|
-| 최진 | 풀스택 | 커뮤니티 |
-| 심세연 | 풀스택 | 뉴스룸 |
-| 기원희 | 풀스택 | 메인페이지, 주식 길잡이|
-| 최용헌 | 백엔드 | 모의투자 |
-| 최예지 | 백엔드 | 카카오로그인, 뉴스 크롤링 |
+| 최진 | 프론트엔드 | 옷장, AI 등록 |
+| 윤정훈 | 프론트엔드 | 코디 등록, 메인페이지 |
+| 김재현 | 프론트엔드 | 로그인, 마이페이지 |
+| 최용헌 | 백엔드 | AI 연동  |
+| 최예지 | 백엔드 | 옷장 |
+| 선지훈 | 백엔드 | 로그인, DB 설계 |
 
 <br />
 
